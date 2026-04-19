@@ -243,7 +243,14 @@ export default function App() {
                 <a href="#projects" className="text-sm font-medium text-gray-600 transition hover:text-gray-900">Projects</a>
                 <a href="#experience" className="text-sm font-medium text-gray-600 transition hover:text-gray-900">Experience</a>
                 <a href="#tools" className="text-sm font-medium text-gray-600 transition hover:text-gray-900">Tools</a>
-                <a href={`mailto:${contact.email}`} className="rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-black">Contact Me</a>
+               <a
+  href={`https://mail.google.com/mail/?view=cm&to=${contact.email}&su=Hiring Inquiry&body=Hi Patricia, I would like to work with you.`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-full bg-gray-900 px-4 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-black"
+>
+  Contact Me
+</a>
               </div>
             </div>
 
@@ -263,7 +270,9 @@ export default function App() {
 
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a
-                    href={`mailto:${contact.email}`}
+                    href={`https://mail.google.com/mail/?view=cm&to=${contact.email}&su=Hiring Inquiry&body=Hi Patricia, I would like to work with you.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group inline-flex items-center gap-2 rounded-2xl bg-[#FFC0CC] px-6 py-3.5 font-semibold text-gray-900 shadow-lg shadow-pink-100 transition duration-300 hover:-translate-y-1 hover:shadow-xl"
                   >
                     Hire Me
@@ -348,7 +357,12 @@ export default function App() {
             <h2 className="text-2xl font-bold text-gray-900">Contact Information</h2>
             <div className="mt-6 grid gap-4 md:grid-cols-2">
               {[
-                { label: "Gmail", value: contact.email, href: `mailto:${contact.email}`, icon: Mail },
+                {
+  label: "Gmail",
+  value: contact.email,
+  href: `https://mail.google.com/mail/?view=cm&to=${contact.email}&su=Hiring Inquiry&body=Hi Patricia, I would like to work with you.`,
+  icon: Mail
+}
                 { label: "Mobile / WhatsApp", value: contact.internationalPhone, href: `tel:${contact.internationalPhone}`, icon: Phone },
                 { label: "Facebook", value: "ishaaa11", href: contact.facebook, icon: Globe },
                 { label: "OnlineJobs.PH", value: "Profile Link", href: contact.onlinejobs, icon: MonitorSmartphone },
@@ -559,11 +573,13 @@ export default function App() {
             </p>
             <div className="mt-8 grid w-full max-w-2xl gap-4 md:grid-cols-2">
               <a
-                href={`mailto:${contact.email}`}
-                className="rounded-2xl bg-[#FFC0CC] px-5 py-4 font-semibold text-gray-900 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
-              >
-                {contact.email}
-              </a>
+  href={`https://mail.google.com/mail/?view=cm&to=${contact.email}&su=Hiring Inquiry&body=Hi Patricia, I would like to work with you.`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="rounded-2xl bg-[#FFC0CC] px-5 py-4 font-semibold text-gray-900 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+>
+  {contact.email}
+</a>
               <a
                 href={`tel:${contact.internationalPhone}`}
                 className="rounded-2xl border border-white/15 px-5 py-4 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-pink-200 hover:text-pink-100"
